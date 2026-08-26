@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Understand, document, and improve the structure and quality of supply chain data." />
+  <title>Data Standards and Profiling | SFU Digital Supply Chain Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="SFU Digital Supply Chain Lab home">
+        <span class="sfu-mark">SFU</span>
+        <span class="brand-text"><strong>Digital Supply Chain Lab</strong><small>Simon Fraser University · Big Data Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#mission">Mission</a>
+        <a href="index.html">Capabilities</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#governance">Governance</a>
+        <a href="../index.html#people">People</a>
+        <a class="button small" href="../index.html#contact">Partner With Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero capability-hero">
+      <div class="project-hero-copy">
+        <p class="eyebrow">Capability 01</p>
+        <h1>Data Standards and Profiling</h1>
+        <p class="lead">Understand, document, and improve the structure and quality of supply chain data.</p>
+        <div class="hero-actions">
+          <a class="button" href="../index.html#contact">Start a Collaboration</a>
+          <a class="button secondary" href="index.html">All Capabilities</a>
+        </div>
+      </div>
+      <div class="project-hero-card capability-image" aria-label="Capability illustration">
+        <img src="../assets/capability-data-standards-profiling.svg" alt="Illustration of data standards, metadata tables, connected schemas, and quality profiling" />
+      </div>
+    </section>
+
+    <section class="section project-layout capability-layout">
+      <aside class="project-sidebar" aria-label="Capability navigation">
+        <div class="sidebar-card">
+          <p class="eyebrow">Capability</p>
+          <dl>
+            <div><dt>Area</dt><dd>Data Standards and Profiling</dd></div>
+            <div><dt>Focus</dt><dd>Partner-ready applied projects</dd></div>
+            <div><dt>Outcome</dt><dd>Decision-ready supply chain intelligence</dd></div>
+          </dl>
+        </div>
+        <div class="sidebar-card capability-links">
+          <p class="eyebrow">Other capabilities</p>
+            <a href="data-governance.html">Data Governance</a>
+            <a href="data-management.html">Data Management</a>
+            <a href="model-optimization.html">Model Optimization</a>
+            <a href="data-visualization.html">Visualization of Data</a>
+        </div>
+      </aside>
+
+      <div class="project-main">
+        <article class="content-panel">
+          <p class="eyebrow">Overview</p>
+          <h2>What this capability means</h2>
+          <p>Modern supply chains depend on data from many organizations, systems, and jurisdictions. However, that data is often inconsistent, incomplete, duplicated, or difficult to compare across partners. DSCL helps partners understand the structure, quality, and interoperability of their supply chain data so it can be used with confidence.</p>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">What DSCL Provides</p>
+          <h2>Applied support for partners</h2>
+          <ul class="check-list">
+              <li>Data inventory and asset discovery</li>
+              <li>Data quality assessment and profiling</li>
+              <li>Common data model development</li>
+              <li>Metadata standards and documentation</li>
+              <li>Data dictionary creation</li>
+              <li>Interoperability assessment</li>
+              <li>Gap analysis for missing or incomplete data</li>
+              <li>Preparation of datasets for analytics, AI, and reporting</li>
+          </ul>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">Why It Matters</p>
+          <h2>Supply chain relevance</h2>
+          <p>Before advanced analytics, artificial intelligence, optimization, or dashboards can succeed, organizations must know what data they have, what it means, how reliable it is, and how it can be connected with other datasets. Shared definitions for shipments, loads, containers, orders, deliveries, delays, exceptions, facilities, and events are essential for measuring performance and coordinating decisions across supply chain partners.</p>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">Partner Opportunity</p>
+          <h2>Example project directions</h2>
+          <ul class="check-list">
+              <li>Developing a common data model for transportation and logistics events</li>
+              <li>Profiling shipment, inventory, or warehouse datasets for quality issues</li>
+              <li>Creating a shared data dictionary across supply chain partners</li>
+              <li>Assessing whether operational data is ready for AI modelling</li>
+              <li>Mapping private-sector data to public-sector reporting needs</li>
+          </ul>
+        </article>
+
+        <article class="content-panel outcome-panel">
+          <p class="eyebrow">Outcome</p>
+          <h2>What partners gain</h2>
+          <p>A successful project gives partners a clearer understanding of their data, a stronger foundation for collaboration, and a practical roadmap for turning raw operational data into trusted supply chain intelligence.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>SFU Digital Supply Chain Lab</strong> · Simon Fraser University · Big Data Hub</p>
+    <p>© <span id="year"></span> Simon Fraser University. Replace this footer with approved SFU web and legal language before public launch.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

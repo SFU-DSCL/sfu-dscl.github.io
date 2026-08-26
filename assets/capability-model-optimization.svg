@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Model Optimization</title>
+  <desc id="desc">A square illustration of a supply chain network with optimized routes and performance curves</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061a33"/>
+      <stop offset="0.52" stop-color="#0a3158"/>
+      <stop offset="1" stop-color="#010b18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="40%" r="58%">
+      <stop offset="0" stop-color="#39c7ff" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#0d5f9f" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .grid{stroke:#3ec7ff;stroke-opacity:.10;stroke-width:1}
+      .line{stroke:#74dcff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .thin{stroke:#74dcff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:.9}
+      .red{stroke:#CC0633;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .fill{fill:#0d2f55;stroke:#74dcff;stroke-width:3;filter:url(#softglow)}
+      .fill2{fill:#08213f;stroke:#9ee9ff;stroke-width:3}
+      .txt{font-family:Inter,Arial,sans-serif;fill:#ffffff;font-weight:800;letter-spacing:.04em}
+      .sub{font-family:Inter,Arial,sans-serif;fill:#b9ddf5;font-weight:600;letter-spacing:.02em}
+      .node{fill:#ffffff;stroke:#74dcff;stroke-width:4;filter:url(#softglow)}
+      .dot{fill:#74dcff;filter:url(#softglow)}
+    </style>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+  <g opacity=".50">
+    <path class="grid" d="M100 0V1000 M200 0V1000 M300 0V1000 M400 0V1000 M500 0V1000 M600 0V1000 M700 0V1000 M800 0V1000 M900 0V1000"/>
+    <path class="grid" d="M0 100H1000 M0 200H1000 M0 300H1000 M0 400H1000 M0 500H1000 M0 600H1000 M0 700H1000 M0 800H1000 M0 900H1000"/>
+  </g>
+  <text x="72" y="94" class="txt" font-size="38">SFU DSCL</text>
+  <text x="72" y="140" class="sub" font-size="22">Model Optimization</text>
+
+  <g transform="translate(105 220)">
+    <circle class="node" cx="120" cy="165" r="23"/>
+    <circle class="node" cx="345" cy="90" r="23"/>
+    <circle class="node" cx="570" cy="205" r="23"/>
+    <circle class="node" cx="720" cy="80" r="23"/>
+    <circle class="node" cx="710" cy="390" r="23"/>
+    <circle class="node" cx="390" cy="430" r="23"/>
+    <circle class="node" cx="135" cy="390" r="23"/>
+    <path class="thin" d="M120 165L345 90L570 205L720 80 M570 205L710 390L390 430L135 390L120 165 M345 90L390 430"/>
+    <path class="red" d="M120 165L345 90L570 205L710 390"/>
+    <path class="line" d="M135 390C270 260 445 305 570 205"/>
+    <g transform="translate(145 535)">
+      <rect class="fill2" x="0" y="0" width="520" height="180" rx="26"/>
+      <path class="thin" d="M55 130H470 M55 130V35"/>
+      <path class="red" d="M65 118C145 110 190 82 235 88C305 97 345 52 455 46"/>
+      <text x="185" y="165" class="sub" font-size="21">COST / TIME / RISK</text>
+    </g>
+  </g>
+</svg>

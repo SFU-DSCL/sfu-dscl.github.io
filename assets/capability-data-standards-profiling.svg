@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Data Standards and Profiling</title>
+  <desc id="desc">A square illustration of standardized data tables, connected schemas, and quality profiling</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061a33"/>
+      <stop offset="0.52" stop-color="#0a3158"/>
+      <stop offset="1" stop-color="#010b18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="40%" r="58%">
+      <stop offset="0" stop-color="#39c7ff" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#0d5f9f" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .grid{stroke:#3ec7ff;stroke-opacity:.10;stroke-width:1}
+      .line{stroke:#74dcff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .thin{stroke:#74dcff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:.9}
+      .red{stroke:#CC0633;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .fill{fill:#0d2f55;stroke:#74dcff;stroke-width:3;filter:url(#softglow)}
+      .fill2{fill:#08213f;stroke:#9ee9ff;stroke-width:3}
+      .txt{font-family:Inter,Arial,sans-serif;fill:#ffffff;font-weight:800;letter-spacing:.04em}
+      .sub{font-family:Inter,Arial,sans-serif;fill:#b9ddf5;font-weight:600;letter-spacing:.02em}
+      .node{fill:#ffffff;stroke:#74dcff;stroke-width:4;filter:url(#softglow)}
+      .dot{fill:#74dcff;filter:url(#softglow)}
+    </style>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+  <g opacity=".50">
+    <path class="grid" d="M100 0V1000 M200 0V1000 M300 0V1000 M400 0V1000 M500 0V1000 M600 0V1000 M700 0V1000 M800 0V1000 M900 0V1000"/>
+    <path class="grid" d="M0 100H1000 M0 200H1000 M0 300H1000 M0 400H1000 M0 500H1000 M0 600H1000 M0 700H1000 M0 800H1000 M0 900H1000"/>
+  </g>
+  <text x="72" y="94" class="txt" font-size="38">SFU DSCL</text>
+  <text x="72" y="140" class="sub" font-size="22">Data Standards and Profiling</text>
+
+  <g transform="translate(90 230)">
+    <rect class="fill" x="0" y="0" width="510" height="430" rx="30"/>
+    <path class="red" d="M0 92H510"/>
+    <path class="thin" d="M170 92V430 M340 92V430 M0 178H510 M0 264H510 M0 350H510"/>
+    <circle class="dot" cx="56" cy="48" r="10"/><circle class="dot" cx="94" cy="48" r="10"/><circle class="dot" cx="132" cy="48" r="10"/>
+    <text x="45" y="148" class="sub" font-size="22">ID</text>
+    <text x="198" y="148" class="sub" font-size="22">EVENT</text>
+    <text x="370" y="148" class="sub" font-size="22">TIME</text>
+  </g>
+  <g transform="translate(635 275)">
+    <circle cx="155" cy="155" r="152" fill="#08213f" stroke="#74dcff" stroke-width="3"/>
+    <circle cx="155" cy="155" r="108" fill="none" stroke="#74dcff" stroke-opacity=".26" stroke-width="2"/>
+    <path class="line" d="M70 92C115 44 195 42 240 88 M62 220C112 260 194 268 247 221"/>
+    <circle class="node" cx="68" cy="92" r="12"/><circle class="node" cx="241" cy="88" r="12"/>
+    <circle class="node" cx="62" cy="220" r="12"/><circle class="node" cx="247" cy="221" r="12"/>
+    <rect class="fill2" x="95" y="117" width="120" height="74" rx="18"/>
+    <text x="117" y="163" class="txt" font-size="25">DATA</text>
+  </g>
+  <g transform="translate(580 670)">
+    <path class="thin" d="M0 110A110 110 0 0 1 220 110"/>
+    <path class="red" d="M110 110L184 42"/>
+    <circle class="node" cx="110" cy="110" r="12"/>
+    <text x="15" y="160" class="sub" font-size="22">QUALITY PROFILE</text>
+  </g>
+</svg>

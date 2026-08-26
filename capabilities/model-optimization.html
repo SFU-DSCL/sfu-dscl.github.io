@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Develop predictive and prescriptive models to support better supply chain decisions." />
+  <title>Model Optimization | SFU Digital Supply Chain Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="SFU Digital Supply Chain Lab home">
+        <span class="sfu-mark">SFU</span>
+        <span class="brand-text"><strong>Digital Supply Chain Lab</strong><small>Simon Fraser University · Big Data Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#mission">Mission</a>
+        <a href="index.html">Capabilities</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#governance">Governance</a>
+        <a href="../index.html#people">People</a>
+        <a class="button small" href="../index.html#contact">Partner With Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero capability-hero">
+      <div class="project-hero-copy">
+        <p class="eyebrow">Capability 04</p>
+        <h1>Model Optimization</h1>
+        <p class="lead">Develop predictive and prescriptive models to support better supply chain decisions.</p>
+        <div class="hero-actions">
+          <a class="button" href="../index.html#contact">Start a Collaboration</a>
+          <a class="button secondary" href="index.html">All Capabilities</a>
+        </div>
+      </div>
+      <div class="project-hero-card capability-image" aria-label="Capability illustration">
+        <img src="../assets/capability-model-optimization.svg" alt="Illustration of route optimization, network nodes, and improving performance metrics" />
+      </div>
+    </section>
+
+    <section class="section project-layout capability-layout">
+      <aside class="project-sidebar" aria-label="Capability navigation">
+        <div class="sidebar-card">
+          <p class="eyebrow">Capability</p>
+          <dl>
+            <div><dt>Area</dt><dd>Model Optimization</dd></div>
+            <div><dt>Focus</dt><dd>Partner-ready applied projects</dd></div>
+            <div><dt>Outcome</dt><dd>Decision-ready supply chain intelligence</dd></div>
+          </dl>
+        </div>
+        <div class="sidebar-card capability-links">
+          <p class="eyebrow">Other capabilities</p>
+            <a href="data-standards-profiling.html">Data Standards and Profiling</a>
+            <a href="data-governance.html">Data Governance</a>
+            <a href="data-management.html">Data Management</a>
+            <a href="data-visualization.html">Visualization of Data</a>
+        </div>
+      </aside>
+
+      <div class="project-main">
+        <article class="content-panel">
+          <p class="eyebrow">Overview</p>
+          <h2>What this capability means</h2>
+          <p>Supply chain decisions are complex. Organizations must balance cost, time, capacity, reliability, emissions, labour, infrastructure constraints, customer demand, and risk. DSCL helps partners develop and improve models that support better supply chain decisions.</p>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">What DSCL Provides</p>
+          <h2>Applied support for partners</h2>
+          <ul class="check-list">
+              <li>Forecasting and predictive modelling</li>
+              <li>Optimization of logistics and resource allocation</li>
+              <li>Simulation and scenario analysis</li>
+              <li>Bottleneck and disruption modelling</li>
+              <li>Risk scoring and anomaly detection</li>
+              <li>AI-assisted decision support</li>
+              <li>Model validation and performance testing</li>
+              <li>Sensitivity analysis and stress testing</li>
+              <li>Translation of model outputs into operational recommendations</li>
+          </ul>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">Why It Matters</p>
+          <h2>Supply chain relevance</h2>
+          <p>Many supply chain decisions are still made with incomplete visibility and limited ability to test alternatives. Optimization helps partners evaluate bottlenecks, route choices, capacity allocation, disruption impacts, and trade-offs between cost, resilience, and sustainability before decisions are implemented.</p>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">Partner Opportunity</p>
+          <h2>Example project directions</h2>
+          <ul class="check-list">
+              <li>Optimizing freight movement across corridors or logistics hubs</li>
+              <li>Forecasting disruption impacts on inventory or delivery performance</li>
+              <li>Modelling port, warehouse, or transportation bottlenecks</li>
+              <li>Developing AI tools for supply chain risk detection</li>
+              <li>Testing scenarios for climate, labour, infrastructure, or demand shocks</li>
+          </ul>
+        </article>
+
+        <article class="content-panel outcome-panel">
+          <p class="eyebrow">Outcome</p>
+          <h2>What partners gain</h2>
+          <p>A successful model optimization project helps partners make better decisions faster by providing evidence-based recommendations, improving planning, reducing uncertainty, and supporting more resilient and efficient supply chains.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>SFU Digital Supply Chain Lab</strong> · Simon Fraser University · Big Data Hub</p>
+    <p>© <span id="year"></span> Simon Fraser University. Replace this footer with approved SFU web and legal language before public launch.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

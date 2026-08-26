@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Data Management</title>
+  <desc id="desc">A square illustration of databases, data pipelines, and managed data flows</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061a33"/>
+      <stop offset="0.52" stop-color="#0a3158"/>
+      <stop offset="1" stop-color="#010b18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="40%" r="58%">
+      <stop offset="0" stop-color="#39c7ff" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#0d5f9f" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .grid{stroke:#3ec7ff;stroke-opacity:.10;stroke-width:1}
+      .line{stroke:#74dcff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .thin{stroke:#74dcff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:.9}
+      .red{stroke:#CC0633;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .fill{fill:#0d2f55;stroke:#74dcff;stroke-width:3;filter:url(#softglow)}
+      .fill2{fill:#08213f;stroke:#9ee9ff;stroke-width:3}
+      .txt{font-family:Inter,Arial,sans-serif;fill:#ffffff;font-weight:800;letter-spacing:.04em}
+      .sub{font-family:Inter,Arial,sans-serif;fill:#b9ddf5;font-weight:600;letter-spacing:.02em}
+      .node{fill:#ffffff;stroke:#74dcff;stroke-width:4;filter:url(#softglow)}
+      .dot{fill:#74dcff;filter:url(#softglow)}
+    </style>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+  <g opacity=".50">
+    <path class="grid" d="M100 0V1000 M200 0V1000 M300 0V1000 M400 0V1000 M500 0V1000 M600 0V1000 M700 0V1000 M800 0V1000 M900 0V1000"/>
+    <path class="grid" d="M0 100H1000 M0 200H1000 M0 300H1000 M0 400H1000 M0 500H1000 M0 600H1000 M0 700H1000 M0 800H1000 M0 900H1000"/>
+  </g>
+  <text x="72" y="94" class="txt" font-size="38">SFU DSCL</text>
+  <text x="72" y="140" class="sub" font-size="22">Data Management</text>
+
+  <g transform="translate(105 235)">
+    <g transform="translate(0 55)">
+      <ellipse class="fill" cx="180" cy="75" rx="130" ry="48"/>
+      <path class="line" d="M50 75V250C50 276 108 300 180 300C252 300 310 276 310 250V75"/>
+      <path class="thin" d="M50 150C50 176 108 200 180 200C252 200 310 176 310 150 M50 225C50 251 108 275 180 275C252 275 310 251 310 225"/>
+      <text x="105" y="365" class="sub" font-size="23">SOURCE DATA</text>
+    </g>
+    <g transform="translate(360 0)">
+      <path class="line" d="M0 225H180 M180 225L145 195 M180 225L145 255"/>
+      <rect class="fill2" x="205" y="130" width="190" height="190" rx="30"/>
+      <path class="red" d="M245 190H355 M245 225H355 M245 260H320"/>
+      <text x="245" y="370" class="sub" font-size="23">PIPELINE</text>
+    </g>
+    <g transform="translate(640 65)">
+      <rect class="fill" x="0" y="0" width="175" height="280" rx="28"/>
+      <path class="thin" d="M38 70H137 M38 120H137 M38 170H137 M38 220H110"/>
+      <circle class="dot" cx="122" cy="220" r="9"/>
+      <text x="8" y="340" class="sub" font-size="23">CURATED DATA</text>
+    </g>
+    <path class="line" d="M755 540C650 610 530 640 390 625C275 613 185 580 120 530"/>
+    <circle class="node" cx="755" cy="540" r="13"/><circle class="node" cx="120" cy="530" r="13"/>
+    <text x="285" y="690" class="sub" font-size="22">RELIABLE • REUSABLE • TRACEABLE</text>
+  </g>
+</svg>

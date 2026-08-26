@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DSCL capabilities for industry partners: data standards, governance, management, optimization, and visualization." />
+  <title>Capabilities | SFU Digital Supply Chain Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="SFU Digital Supply Chain Lab home">
+        <span class="sfu-mark">SFU</span>
+        <span class="brand-text"><strong>Digital Supply Chain Lab</strong><small>Simon Fraser University · Big Data Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#mission">Mission</a>
+        <a href="index.html">Capabilities</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#governance">Governance</a>
+        <a href="../index.html#people">People</a>
+        <a class="button small" href="../index.html#contact">Partner With Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero capability-hero">
+      <div class="project-hero-copy">
+        <p class="eyebrow">Lab Capabilities</p>
+        <h1>Services and capabilities for supply chain partners.</h1>
+        <p class="lead">DSCL helps prospective partners in industry, government, and academia explore and accelerate data-driven supply chain innovation through practical applied projects.</p>
+      </div>
+      <div class="project-hero-card" aria-label="DSCL infographic">
+        <img src="../assets/sfu-dscl-infographic.jpeg" alt="SFU Digital Supply Chain Lab infographic showing a connected supply chain network" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Explore</p>
+        <h2>Five applied capability areas</h2>
+      </div>
+      <div class="capability-grid">
+        <a class="capability-card" href="data-standards-profiling.html">
+          <span class="icon">01</span>
+          <h3>Data Standards and Profiling</h3>
+          <p>Understand, document, and improve the structure and quality of supply chain data.</p>
+        </a>
+        <a class="capability-card" href="data-governance.html">
+          <span class="icon">02</span>
+          <h3>Data Governance</h3>
+          <p>Create trusted frameworks for secure, responsible, and multi-party data collaboration.</p>
+        </a>
+        <a class="capability-card" href="data-management.html">
+          <span class="icon">03</span>
+          <h3>Data Management</h3>
+          <p>Build reliable data pipelines, repositories, and workflows for supply chain intelligence.</p>
+        </a>
+        <a class="capability-card" href="model-optimization.html">
+          <span class="icon">04</span>
+          <h3>Model Optimization</h3>
+          <p>Develop predictive and prescriptive models to support better supply chain decisions.</p>
+        </a>
+        <a class="capability-card" href="data-visualization.html">
+          <span class="icon">05</span>
+          <h3>Visualization of Data</h3>
+          <p>Turn complex supply chain data into dashboards, maps, and decision-ready insights.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <p class="eyebrow">Partner with DSCL</p>
+        <h2>Map a capability to your supply chain challenge.</h2>
+        <p>DSCL can help define a focused project, assess data readiness, identify governance requirements, and build a practical path toward implementation.</p>
+      </div>
+      <a class="button" href="mailto:smakonin@sfu.ca?subject=DSCL%20Capability%20Collaboration">Contact Stephen Makonin</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>SFU Digital Supply Chain Lab</strong> · Simon Fraser University · Big Data Hub</p>
+    <p>© <span id="year"></span> Simon Fraser University. Replace this footer with approved SFU web and legal language before public launch.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

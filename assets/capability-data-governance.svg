@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Data Governance</title>
+  <desc id="desc">A square illustration of governed data sharing with a shield, permissions, and trusted connections</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061a33"/>
+      <stop offset="0.52" stop-color="#0a3158"/>
+      <stop offset="1" stop-color="#010b18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="40%" r="58%">
+      <stop offset="0" stop-color="#39c7ff" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#0d5f9f" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .grid{stroke:#3ec7ff;stroke-opacity:.10;stroke-width:1}
+      .line{stroke:#74dcff;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .thin{stroke:#74dcff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;fill:none;opacity:.9}
+      .red{stroke:#CC0633;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;fill:none;filter:url(#softglow)}
+      .fill{fill:#0d2f55;stroke:#74dcff;stroke-width:3;filter:url(#softglow)}
+      .fill2{fill:#08213f;stroke:#9ee9ff;stroke-width:3}
+      .txt{font-family:Inter,Arial,sans-serif;fill:#ffffff;font-weight:800;letter-spacing:.04em}
+      .sub{font-family:Inter,Arial,sans-serif;fill:#b9ddf5;font-weight:600;letter-spacing:.02em}
+      .node{fill:#ffffff;stroke:#74dcff;stroke-width:4;filter:url(#softglow)}
+      .dot{fill:#74dcff;filter:url(#softglow)}
+    </style>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#glow)"/>
+  <g opacity=".50">
+    <path class="grid" d="M100 0V1000 M200 0V1000 M300 0V1000 M400 0V1000 M500 0V1000 M600 0V1000 M700 0V1000 M800 0V1000 M900 0V1000"/>
+    <path class="grid" d="M0 100H1000 M0 200H1000 M0 300H1000 M0 400H1000 M0 500H1000 M0 600H1000 M0 700H1000 M0 800H1000 M0 900H1000"/>
+  </g>
+  <text x="72" y="94" class="txt" font-size="38">SFU DSCL</text>
+  <text x="72" y="140" class="sub" font-size="22">Data Governance</text>
+
+  <g transform="translate(115 235)">
+    <circle cx="385" cy="330" r="240" fill="#08213f" stroke="#74dcff" stroke-opacity=".35" stroke-width="3"/>
+    <path class="line" d="M385 120L535 175V320C535 440 474 525 385 575C296 525 235 440 235 320V175Z"/>
+    <path class="red" d="M332 340L375 383L455 292"/>
+    <rect class="fill2" x="333" y="214" width="104" height="82" rx="20"/>
+    <path class="thin" d="M358 214V185C358 150 412 150 412 185V214"/>
+    <circle class="dot" cx="385" cy="255" r="9"/>
+    <path class="thin" d="M78 245H235 M535 245H692 M110 430H265 M505 430H660"/>
+    <circle class="node" cx="78" cy="245" r="18"/><circle class="node" cx="692" cy="245" r="18"/>
+    <circle class="node" cx="110" cy="430" r="18"/><circle class="node" cx="660" cy="430" r="18"/>
+    <text x="20" y="305" class="sub" font-size="21">PARTNER A</text>
+    <text x="650" y="305" class="sub" font-size="21">PARTNER B</text>
+    <text x="45" y="490" class="sub" font-size="21">PUBLIC</text>
+    <text x="618" y="490" class="sub" font-size="21">ACADEMIC</text>
+  </g>
+</svg>

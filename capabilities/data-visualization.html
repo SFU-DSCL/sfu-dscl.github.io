@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Turn complex supply chain data into dashboards, maps, and decision-ready insights." />
+  <title>Visualization of Data | SFU Digital Supply Chain Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="SFU Digital Supply Chain Lab home">
+        <span class="sfu-mark">SFU</span>
+        <span class="brand-text"><strong>Digital Supply Chain Lab</strong><small>Simon Fraser University · Big Data Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#mission">Mission</a>
+        <a href="index.html">Capabilities</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#governance">Governance</a>
+        <a href="../index.html#people">People</a>
+        <a class="button small" href="../index.html#contact">Partner With Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero capability-hero">
+      <div class="project-hero-copy">
+        <p class="eyebrow">Capability 05</p>
+        <h1>Visualization of Data</h1>
+        <p class="lead">Turn complex supply chain data into dashboards, maps, and decision-ready insights.</p>
+        <div class="hero-actions">
+          <a class="button" href="../index.html#contact">Start a Collaboration</a>
+          <a class="button secondary" href="index.html">All Capabilities</a>
+        </div>
+      </div>
+      <div class="project-hero-card capability-image" aria-label="Capability illustration">
+        <img src="../assets/capability-data-visualization.svg" alt="Illustration of supply chain dashboards, maps, charts, and visual analytics" />
+      </div>
+    </section>
+
+    <section class="section project-layout capability-layout">
+      <aside class="project-sidebar" aria-label="Capability navigation">
+        <div class="sidebar-card">
+          <p class="eyebrow">Capability</p>
+          <dl>
+            <div><dt>Area</dt><dd>Visualization of Data</dd></div>
+            <div><dt>Focus</dt><dd>Partner-ready applied projects</dd></div>
+            <div><dt>Outcome</dt><dd>Decision-ready supply chain intelligence</dd></div>
+          </dl>
+        </div>
+        <div class="sidebar-card capability-links">
+          <p class="eyebrow">Other capabilities</p>
+            <a href="data-standards-profiling.html">Data Standards and Profiling</a>
+            <a href="data-governance.html">Data Governance</a>
+            <a href="data-management.html">Data Management</a>
+            <a href="model-optimization.html">Model Optimization</a>
+        </div>
+      </aside>
+
+      <div class="project-main">
+        <article class="content-panel">
+          <p class="eyebrow">Overview</p>
+          <h2>What this capability means</h2>
+          <p>Supply chain data is only useful when people can understand it and act on it. DSCL helps partners transform complex data into clear visual tools that support communication, decision-making, and strategic planning.</p>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">What DSCL Provides</p>
+          <h2>Applied support for partners</h2>
+          <ul class="check-list">
+              <li>Interactive dashboards</li>
+              <li>Geospatial supply chain maps</li>
+              <li>Supply chain network visualizations</li>
+              <li>Performance indicator design</li>
+              <li>Risk and disruption dashboards</li>
+              <li>Timeline and event-sequence visualization</li>
+              <li>Scenario-comparison tools</li>
+              <li>Executive briefing graphics</li>
+              <li>Visual storytelling for reports and presentations</li>
+          </ul>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">Why It Matters</p>
+          <h2>Supply chain relevance</h2>
+          <p>Supply chains involve many actors, locations, time points, and dependencies. A spreadsheet or static report may not show how problems move through a system. Visualization helps partners understand not only what is happening, but where, when, why, and with what consequence. It also creates a shared language for government, industry, and academic partners.</p>
+        </article>
+
+        <article class="content-panel">
+          <p class="eyebrow">Partner Opportunity</p>
+          <h2>Example project directions</h2>
+          <ul class="check-list">
+              <li>Building a dashboard for supply chain performance indicators</li>
+              <li>Mapping freight flows, bottlenecks, or infrastructure dependencies</li>
+              <li>Visualizing disruption scenarios and downstream impacts</li>
+              <li>Creating partner-facing visual reports for collaborative projects</li>
+              <li>Designing executive graphics for funding, policy, or investment decisions</li>
+          </ul>
+        </article>
+
+        <article class="content-panel outcome-panel">
+          <p class="eyebrow">Outcome</p>
+          <h2>What partners gain</h2>
+          <p>A successful visualization project turns data into insight, insight into alignment, and alignment into action.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>SFU Digital Supply Chain Lab</strong> · Simon Fraser University · Big Data Hub</p>
+    <p>© <span id="year"></span> Simon Fraser University. Replace this footer with approved SFU web and legal language before public launch.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
