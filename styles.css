@@ -1,8 +1,8 @@
 :root {
   --sfu-red: #A6192E;
   --sfu-red-bright: #CC0633;
-  --header-blue: #061A33;
-  --deep-blue: #021024;
+  --header-blue: #0A3B70;
+  --deep-blue: #062B55;
   --electric-blue: #19A7FF;
   --ink: #EDF6FF;
   --muted: #B8C8D9;
@@ -19,8 +19,10 @@ body {
   background:
     radial-gradient(circle at 78% 15%, rgba(25, 167, 255, 0.20), transparent 32rem),
     radial-gradient(circle at 16% 12%, rgba(166, 25, 46, 0.18), transparent 26rem),
-    linear-gradient(180deg, var(--header-blue), var(--deep-blue) 48%, #020814);
+    linear-gradient(180deg, var(--header-blue), var(--deep-blue));
+  background-attachment: fixed;
   line-height: 1.6;
+  min-height: 100vh;
 }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
@@ -166,6 +168,9 @@ h3 { font-size: 1.25rem; letter-spacing: -0.025em; }
   background: linear-gradient(135deg, var(--sfu-red), #0d7ac3);
   font-size: 2rem;
   font-weight: 900;
+  object-fit: cover;
+  object-position: center top;
+  overflow: hidden;
 }
 .cta { width: min(1120px, calc(100% - 32px)); margin: 38px auto 86px; padding: 38px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .cta div { max-width: 720px; }

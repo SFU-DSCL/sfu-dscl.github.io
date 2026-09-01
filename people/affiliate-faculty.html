@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Affiliate faculty connected with the SFU Digital Supply Chain Lab at Simon Fraser University and partner universities." />
+  <title>Affiliate Faculty | SFU Digital Supply Chain Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="affiliate-faculty.css" />
+  <script src="affiliate-faculty-data.js" defer></script>
+  <script src="affiliate-faculty.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="SFU Digital Supply Chain Lab home">
+        <span class="sfu-mark">SFU</span>
+        <span class="brand-text"><strong>Digital Supply Chain Lab</strong><small>Simon Fraser University · Big Data Hub</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#mission">Mission</a>
+        <a href="../index.html#work">What We Do</a>
+        <a href="../capabilities/index.html">Capabilities</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#governance">Governance</a>
+        <a href="affiliate-faculty.html" aria-current="page">People</a>
+        <a class="button small" href="../index.html#contact">Partner With Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="faculty-hero">
+      <div class="faculty-hero-copy">
+        <p class="eyebrow">Our Academic Network</p>
+        <h1>Affiliate faculty</h1>
+        <p class="lead">DSCL connects expertise at Simon Fraser University with researchers at universities across Canada and beyond. Together, our affiliate faculty advance trusted, resilient, and intelligent supply chains.</p>
+        <div class="faculty-stats" aria-label="Faculty network summary">
+          <div class="faculty-stat"><strong id="sfu-stat">0</strong><span>SFU affiliates</span></div>
+          <div class="faculty-stat"><strong id="partner-stat">0</strong><span>Partner universities</span></div>
+          <div class="faculty-stat"><strong id="total-stat">0</strong><span>Total faculty</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faculty-directory" aria-labelledby="directory-title">
+      <div class="section-heading">
+        <p class="eyebrow">Directory</p>
+        <h2 id="directory-title">Find an affiliate faculty member</h2>
+        <p class="lead-small">Browse everyone in the network or narrow the directory by name, expertise, department, or university.</p>
+      </div>
+
+      <div class="faculty-toolbar" role="search">
+        <label class="faculty-control">
+          <span>Search faculty</span>
+          <input id="faculty-search" type="search" placeholder="Search by name, unit, or research area" autocomplete="off" />
+        </label>
+        <label class="faculty-control">
+          <span>University</span>
+          <select id="university-filter">
+            <option value="">All universities</option>
+          </select>
+        </label>
+      </div>
+      <p class="faculty-results-summary" id="faculty-results-summary" aria-live="polite"></p>
+
+      <section class="faculty-group" data-faculty-group="sfu" aria-labelledby="sfu-faculty-title">
+        <div class="faculty-group-heading">
+          <div>
+            <p class="eyebrow">Simon Fraser University</p>
+            <h2 id="sfu-faculty-title">SFU affiliate faculty</h2>
+            <p>Faculty across SFU contributing research, teaching, and applied expertise to DSCL.</p>
+          </div>
+          <span class="faculty-count" id="sfu-count">0 members</span>
+        </div>
+        <div class="faculty-grid" id="sfu-faculty-grid"></div>
+      </section>
+
+      <section class="faculty-group" data-faculty-group="other" aria-labelledby="other-faculty-title">
+        <div class="faculty-group-heading">
+          <div>
+            <p class="eyebrow">Partner Institutions</p>
+            <h2 id="other-faculty-title">Affiliate faculty at other universities</h2>
+            <p>Academic collaborators extending the network across institutions and disciplines.</p>
+          </div>
+          <span class="faculty-count" id="other-count">0 members</span>
+        </div>
+        <div class="faculty-grid" id="other-faculty-grid"></div>
+      </section>
+
+      <div class="faculty-empty" id="faculty-empty" hidden>No affiliate faculty match that search. Try another name, research area, or university.</div>
+      <noscript><p class="faculty-empty">JavaScript is required to display the faculty directory.</p></noscript>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <p class="eyebrow">Work With the Network</p>
+        <h2>Connect your expertise with DSCL.</h2>
+        <p>We welcome conversations with researchers whose work can strengthen secure, data-driven supply chain innovation.</p>
+      </div>
+      <a class="button" href="mailto:smakonin@sfu.ca?subject=DSCL%20Affiliate%20Faculty%20Inquiry">Contact Stephen Makonin</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>SFU Digital Supply Chain Lab</strong> · Simon Fraser University · Big Data Hub</p>
+    <p>© <span id="year"></span> SFU Digital Supply Chain Lab. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      links.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
